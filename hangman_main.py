@@ -15,7 +15,7 @@ hidden_word = []
 
 for _ in choosen_word:
     hidden_word += "_"
-    
+
 print(hidden_word)
 
 print("\nYou have 6 life.")
@@ -27,10 +27,9 @@ while life > 0 and "_" in hidden_word:
     for n in range(len(choosen_word)):
         if guess in choosen_word[n]:
             hidden_word[n] = guess
-        
+
     print(hidden_word)
-    
-    
+
     if not guess in hidden_word:
         life -= 1
         print("\nOh no, you lose a life.")
